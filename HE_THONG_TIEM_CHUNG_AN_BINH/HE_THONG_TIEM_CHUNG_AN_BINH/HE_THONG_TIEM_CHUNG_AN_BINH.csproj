@@ -52,6 +52,18 @@
     <Compile Include="Dang Ky Lich Ranh.Designer.cs">
       <DependentUpon>Dang Ky Lich Ranh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dang ky thong tin khach hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dang ky thong tin khach hang.Designer.cs">
+      <DependentUpon>Dang ky thong tin khach hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKyMuaVacxin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyMuaVacxin.Designer.cs">
+      <DependentUpon>DangKyMuaVacxin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dang_Ky_Tiem_Chung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +76,37 @@
     <Compile Include="dang_nhap.Designer.cs">
       <DependentUpon>dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="LapPhieuTiemChung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapPhieuTiemChung.Designer.cs">
+      <DependentUpon>LapPhieuTiemChung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dang Ky Lich Ranh.resx">
       <DependentUpon>Dang Ky Lich Ranh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dang ky thong tin khach hang.resx">
+      <DependentUpon>Dang ky thong tin khach hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyMuaVacxin.resx">
+      <DependentUpon>DangKyMuaVacxin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dang_Ky_Tiem_Chung.resx">
       <DependentUpon>Dang_Ky_Tiem_Chung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dang_nhap.resx">
       <DependentUpon>dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapPhieuTiemChung.resx">
+      <DependentUpon>LapPhieuTiemChung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

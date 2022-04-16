@@ -17,7 +17,8 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new dang_nhap());
-            Application.Run(new Dang_Ky_Lich_Ranh());
+            //Application.Run(new Dang_Ky_Lich_Ranh());
+            Application.Run(new Dang_ky_thong_tin_khach_hang());
         }
     }
 }

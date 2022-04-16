@@ -29,16 +29,8 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView_DS_vacxin = new System.Windows.Forms.DataGridView();
             this.textBox_timfKiem_vacxin = new System.Windows.Forms.TextBox();
             this.button_timKiem_vacxin = new System.Windows.Forms.Button();
@@ -48,91 +40,32 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DS_vacxin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 24);
-            this.comboBox1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.Size = new System.Drawing.Size(149, 17);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Họ tên";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Ngày tháng năm sinh";
+            this.label1.Text = "Họ tên: Nguyễn Văn A";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 117);
+            this.label3.Location = new System.Drawing.Point(12, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.Size = new System.Drawing.Size(101, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Giới tính";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Số hộ chiếu/CMND?CCCD";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Số thẻ BHYT";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 241);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(12, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 22);
-            this.textBox2.TabIndex = 12;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(12, 137);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(184, 24);
-            this.comboBox4.TabIndex = 13;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 78);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 22);
-            this.dateTimePicker1.TabIndex = 14;
+            this.label3.Text = "Giới tính:  Nam";
             // 
             // dataGridView_DS_vacxin
             // 
@@ -182,15 +115,16 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(234, 309);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(219, 17);
+            this.label10.Size = new System.Drawing.Size(250, 17);
             this.label10.TabIndex = 22;
             this.label10.Text = "Danh sách vacxin được chọn tiêm";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(424, 263);
+            this.button1.Location = new System.Drawing.Point(584, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 23);
             this.button1.TabIndex = 23;
@@ -199,7 +133,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(424, 492);
+            this.button2.Location = new System.Drawing.Point(616, 492);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 23);
             this.button2.TabIndex = 24;
@@ -208,18 +142,70 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(812, 336);
+            this.richTextBox1.Location = new System.Drawing.Point(73, 336);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(158, 150);
             this.richTextBox1.TabIndex = 25;
             this.richTextBox1.Text = "- Chọn vacxin cần tiêm, ngày mong muốn tiêm và trung tâm mong muốn tiêm\n- Chọn tr" +
     "ong danh sách vacxin được chọn\n";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(166, 17);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Thông tin khách hàng";
+            // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.Location = new System.Drawing.Point(424, 519);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 27);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Đăng ký tiêm ";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(777, 88);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(310, 398);
+            this.richTextBox2.TabIndex = 32;
+            this.richTextBox2.Text = "Thông tin vacxin:\n- Chống chỉ định trẻ em dưới 10 tuổi, phụ nữ có thai và cho con" +
+    " bú \n- Bệnh nhân mắc bệnh tiểu đường cần tham khảo ý kiến bác sĩ\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 17);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Mã khách hàng: KH1001";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(167, 17);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Ngày đăng ký: 16/4/2022";
+            // 
             // Dang_Ky_Tiem_Chung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 530);
+            this.ClientSize = new System.Drawing.Size(1140, 568);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -229,16 +215,8 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.Controls.Add(this.button_timKiem_vacxin);
             this.Controls.Add(this.textBox_timfKiem_vacxin);
             this.Controls.Add(this.dataGridView_DS_vacxin);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Name = "Dang_Ky_Tiem_Chung";
             this.Text = "Dang_Ky_Tiem_Chung";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DS_vacxin)).EndInit();
@@ -249,17 +227,8 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dataGridView_DS_vacxin;
         private System.Windows.Forms.TextBox textBox_timfKiem_vacxin;
         private System.Windows.Forms.Button button_timKiem_vacxin;
@@ -269,5 +238,10 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
