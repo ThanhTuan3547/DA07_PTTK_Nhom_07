@@ -51,6 +51,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -248,11 +249,22 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.button1.Text = "Thay đổi vacxin";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.Location = new System.Drawing.Point(415, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 28);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Lưu thông tin ";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // LapPhieuTiemChung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1054, 533);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -306,5 +318,6 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

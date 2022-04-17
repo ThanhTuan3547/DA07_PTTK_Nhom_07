@@ -21,5 +21,10 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
