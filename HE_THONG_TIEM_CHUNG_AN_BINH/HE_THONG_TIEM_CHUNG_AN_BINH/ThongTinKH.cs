@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace HE_THONG_TIEM_CHUNG_AN_BINH
 {
-    public partial class ThongTin : Form
+
+    public partial class ThongTinKH : Form
     {
-        public ThongTin()
+        public ThongTinKH()
         {
             InitializeComponent();
+        }
+
+        private void ThongTin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
