@@ -33,6 +33,9 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.textBox_Search = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dataGridView1_DS_KhachHang = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
@@ -59,9 +62,6 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox_ThuocTinh_Search = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_DS_KhachHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +91,27 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.dataGridView1_DS_KhachHang.RowTemplate.Height = 24;
             this.dataGridView1_DS_KhachHang.Size = new System.Drawing.Size(573, 198);
             this.dataGridView1_DS_KhachHang.TabIndex = 2;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Mã khách hàng";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Họ tên";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // label1
             // 
@@ -290,6 +311,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.button_DangKyKhachHang.TabIndex = 25;
             this.button_DangKyKhachHang.Text = "Đăng ký";
             this.button_DangKyKhachHang.UseVisualStyleBackColor = true;
+            this.button_DangKyKhachHang.Click += new System.EventHandler(this.button_DangKyKhachHang_Click);
             // 
             // label13
             // 
@@ -322,27 +344,6 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.label14.Size = new System.Drawing.Size(89, 17);
             this.label14.TabIndex = 28;
             this.label14.Text = "Mục tìm kiếm";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Mã khách hàng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Họ tên";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
             // 
             // Dang_ky_thong_tin_khach_hang
             // 

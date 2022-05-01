@@ -36,5 +36,19 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         {
 
         }
+
+        private void button_DangKyKhachHang_Click(object sender, EventArgs e)
+        {
+            KhachHang kh = new KhachHang();
+            // kiem tra tinh hop le cua tung text box 
+
+            //su dung controller de tao va insert khach hang vao csdl 
+
+            //kh.Diachi = textBox_DiaChi.Text;
+            //kh.Sdt = textBox_SDT.Text;
+            //kh.MaKH = "10111";
+            //kh.CreateKhachHang("10111","","", textBox_DiaChi.Text, textBox_SDT.Text, "","","" );
+
+        }
     }
 }

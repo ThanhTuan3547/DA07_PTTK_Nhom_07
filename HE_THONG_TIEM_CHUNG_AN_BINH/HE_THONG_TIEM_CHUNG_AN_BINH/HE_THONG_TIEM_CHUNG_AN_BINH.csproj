@@ -76,6 +76,12 @@
     <Compile Include="dang_nhap.Designer.cs">
       <DependentUpon>dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuyetDangKyTiemChung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuyetDangKyTiemChung.Designer.cs">
+      <DependentUpon>DuyetDangKyTiemChung.cs</DependentUpon>
+    </Compile>
     <Compile Include="LapPhieuTiemChung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,18 @@
     </Compile>
     <Compile Include="ThanhToan.Designer.cs">
       <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TiepNhanDangKyTiemOnline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiepNhanDangKyTiemOnline.Designer.cs">
+      <DependentUpon>TiepNhanDangKyTiemOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemThongTinCaNhan%28NhanVien%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemThongTinCaNhan%28NhanVien%29.Designer.cs">
+      <DependentUpon>XemThongTinCaNhan%28NhanVien%29.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Dang Ky Lich Ranh.resx">
       <DependentUpon>Dang Ky Lich Ranh.cs</DependentUpon>
@@ -105,6 +123,9 @@
     <EmbeddedResource Include="dang_nhap.resx">
       <DependentUpon>dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DuyetDangKyTiemChung.resx">
+      <DependentUpon>DuyetDangKyTiemChung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LapPhieuTiemChung.resx">
       <DependentUpon>LapPhieuTiemChung.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +140,12 @@
     </Compile>
     <EmbeddedResource Include="ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiepNhanDangKyTiemOnline.resx">
+      <DependentUpon>TiepNhanDangKyTiemOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemThongTinCaNhan%28NhanVien%29.resx">
+      <DependentUpon>XemThongTinCaNhan%28NhanVien%29.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
