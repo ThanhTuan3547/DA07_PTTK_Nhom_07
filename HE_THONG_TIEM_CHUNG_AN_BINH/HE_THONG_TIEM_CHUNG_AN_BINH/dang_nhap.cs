@@ -13,8 +13,11 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
 {
     public partial class dang_nhap : Form
     {
+        
         private ConnectDB cdb;
         private SqlConnection cnn;
+        public static string username = ""; // biến global tài khoản người đăng nhập 
+        public static string MaNVorKH = ""; // biến global mã nhân viên / khách hàng đăng nhập 
         public dang_nhap()
         {
             InitializeComponent();
@@ -23,6 +26,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
 
         public dang_nhap(ConnectDB cdb, SqlConnection cnn)
         {
+
             // set variable before passing
             this.cdb = cdb;
             this.cnn = cnn;
@@ -50,6 +54,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private void Btn_Dang_nhap_Click(object sender, EventArgs e)
         {
             string curItem = (this.Role_box.SelectedItem as dynamic).Value;
+            username = ID_box.Text;
             if (curItem == "Nhân viên")
             {
                 SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM NHANVIEN WHERE TAIKHOAN ='"
@@ -73,9 +78,9 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
 
                 if (dt.Rows[0][0].ToString() == "1")
                 {
-                    ThongTinKH TTKH = new ThongTinKH(this, this.cnn);
+                    //ThongTinKH TTKH = new ThongTinKH(this, this.cnn);
                     this.Hide();
-                    ThongTinKH.Show();
+                    //ThongTinKH.Show();
                 }
                 else
                     MessageBox.Show("Tài khoản hoặc mật khẩu sai, xin hãy kiểm tra lại !");

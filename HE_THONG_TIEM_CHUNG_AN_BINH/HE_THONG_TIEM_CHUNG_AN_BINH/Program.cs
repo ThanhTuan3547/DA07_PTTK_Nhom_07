@@ -37,7 +37,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         public string Matkhau { get => matkhau; set => matkhau = value; }
 
 
-        public KhachHang()
+        public KhachHang() // constructor
         {
             
         }

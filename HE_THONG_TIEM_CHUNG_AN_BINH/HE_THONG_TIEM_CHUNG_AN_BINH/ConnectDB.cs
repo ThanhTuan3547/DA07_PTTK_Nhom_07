@@ -17,7 +17,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         public ConnectDB()
         {
             InitializeComponent();
-            // set text over here to to debug
+            // set text over here to debug
             sv_name.Text = "PIKACHU\\PIKACHU";
             db_name.Text = "HTTC";
         }

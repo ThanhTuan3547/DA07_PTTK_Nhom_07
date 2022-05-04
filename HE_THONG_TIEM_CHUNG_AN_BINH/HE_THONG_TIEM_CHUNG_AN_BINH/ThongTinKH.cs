@@ -22,7 +22,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
 
         private void ThongTin_Load(object sender, EventArgs e)
         {
-
+            string username = dang_nhap.username; // ở form khác cứ lấy code "dang_nhap.username" 
         }
 
         private void label1_Click(object sender, EventArgs e)
