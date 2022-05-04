@@ -54,7 +54,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private void Btn_Dang_nhap_Click(object sender, EventArgs e)
         {
             string curItem = (this.Role_box.SelectedItem as dynamic).Value;
-            username = ID_box.Text;
+            username = ID_box.Text; // gán biến username 
             if (curItem == "Nhân viên")
             {
                 SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM NHANVIEN WHERE TAIKHOAN ='"
