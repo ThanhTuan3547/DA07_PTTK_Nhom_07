@@ -83,6 +83,8 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
                     if (role == 1) // show trang khach hang
                     {
                         this.Hide();
+                        KH_main KH1 = new KH_main();
+                        KH1.Show();
                     }
                     else // show trang nhan vien 
                     {
