@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace HE_THONG_TIEM_CHUNG_AN_BINH
 {
     public partial class Dang_ky_thong_tin_khach_hang : Form
     {
-        public Dang_ky_thong_tin_khach_hang()
+        public Dang_ky_thong_tin_khach_hang(SqlConnection cnn ,dang_nhap dn)
         {
             InitializeComponent();
             DataGridViewButtonColumn btn_col = new DataGridViewButtonColumn();

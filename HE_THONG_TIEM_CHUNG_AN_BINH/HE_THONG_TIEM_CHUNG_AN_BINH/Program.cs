@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace HE_THONG_TIEM_CHUNG_AN_BINH
 {
-    
-    public class KhachHang
+
+    public class KhachHang // Controller: class này chỉ thực hiện kiểm tra một số nghiệp vụ (vấn đề về dữ liệu trước khi đưa xuống class có đuôi DAO để lấy dữ liệu từ DB lên) (DAO: data access object)
     {
+        
         string ten;
         string gioitinh;
         DateTime ngaysinh;
@@ -37,11 +39,20 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         public string Matkhau { get => matkhau; set => matkhau = value; }
 
 
-        public KhachHang()
+        public KhachHang() // constructor
+        {
+
+        }
+        public bool Loggin(SqlConnection cnn,int role, string taikhoan, string mkhau) // cái function này gọi xuống class KhachHangDAO(là class kết nối với DB)
         {
             
+            KhachHangDAO login = new KhachHangDAO();
+            
+            if (login.login(cnn,role, taikhoan, mkhau) == true) {
+                return true;
+            }
+            return false;
         }
-
         public bool CreateKhachHang(string ten, string gioitinh, string cmnd, string diachi, string sdt, string sdtNgh, string hotenNguoigiamho, string quanhe)
         {
             KhachHang khachhang = new KhachHang();
@@ -65,7 +76,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             return true;
         }
     }
-    public class KhachHangDAO
+    public class KhachHangDAO // class này để query từ DB
     {
         public bool KhachHangTonTai(KhachHang KH)
         {
@@ -73,7 +84,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             
             return false;// ko ton tai
         }
-        public bool insertKhachHang (SqlConnection cnn, KhachHang KH)
+        public bool insertKhachHang ( SqlConnection cnn, KhachHang KH)
         {
             try
             {
@@ -90,6 +101,31 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
                 throw e;
             }
             return true;
+        }
+        public bool login(SqlConnection cnn,int role, string tk, string mk)
+        {
+            DataTable dt = new DataTable();
+            if (role == 1) // khach hang
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM KHACHHANG WHERE TAIKHOAN ='"
+                       + tk + "'" + " AND MATKHAU ='" + mk + "'", cnn);
+                
+                sda.Fill(dt);
+            }
+            if (role == 0) // nhan vien
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM  NHANVIEN WHERE TAIKHOAN ='"
+                       + tk + "'" + " AND MATKHAU ='" + mk + "'", cnn);
+                
+                sda.Fill(dt);
+            }
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                return true;
+            }
+            else
+                return false;
+            return false;
         }
     }
     static class Program
