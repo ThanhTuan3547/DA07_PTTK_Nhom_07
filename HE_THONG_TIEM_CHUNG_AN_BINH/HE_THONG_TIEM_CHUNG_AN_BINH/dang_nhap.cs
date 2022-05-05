@@ -22,7 +22,9 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         public dang_nhap()
         {
             InitializeComponent();
-
+            //Role_box.SelectedItem = "Nhân viên";
+            ID_box.Text = "nv1";
+            Password_box.Text = "12345";
         }
 
         public dang_nhap(ConnectDB cdb, SqlConnection cnn)

@@ -72,3 +72,15 @@ begin
 end
 -- drop proc proc_capnhat_nhanvien
 go
+select * from KHACHHANG;
+where  HOTENKH like N'%%' ;
+go 
+create proc them_khach_hang @maKH int, @HotenKh nvarchar(50), @ngaysinh date, @sdt char(15), @diachi nvarchar(50), @taikhoan char(50), @matkhau char(50)
+as
+begin
+	INSERT dbo.KHACHHANG(MAKH, HOTENKH, NGAYSINH, SDT, DIACHI, TAIKHOAN, MATKHAU) VALUES (@maKH, @HotenKh, @ngaysinh, @sdt, @diachi, @taikhoan,  @matkhau)
+end
+
+exec them_khach_hang 55,;
+insert 
+

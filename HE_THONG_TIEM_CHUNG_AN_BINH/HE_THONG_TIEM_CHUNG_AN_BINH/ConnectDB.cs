@@ -18,9 +18,9 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         {
             InitializeComponent();
             // set text over here to debug
-            sv_name.Text = "PIKACHU\\PIKACHU";
+            //sv_name.Text = "PIKACHU\\PIKACHU";
             //db_name.Text = "HTTC";
-            //sv_name.Text = "LAPTOP-FMCUOBFE\\SQLEXPRESS";
+            sv_name.Text = "LAPTOP-FMCUOBFE\\SQLEXPRESS";
             db_name.Text = "HTTC";
         }
 

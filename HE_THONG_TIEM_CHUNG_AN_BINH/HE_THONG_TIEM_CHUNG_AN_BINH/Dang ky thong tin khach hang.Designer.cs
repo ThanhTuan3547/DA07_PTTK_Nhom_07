@@ -33,14 +33,16 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.textBox_Search = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dataGridView1_DS_KhachHang = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label4_GioiTInh = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -82,22 +84,18 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             // 
             this.dataGridView1_DS_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1_DS_KhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
             this.Column3,
-            this.Column2});
+            this.Column2,
+            this.Column5,
+            this.Column4,
+            this.Column1});
             this.dataGridView1_DS_KhachHang.Location = new System.Drawing.Point(36, 219);
             this.dataGridView1_DS_KhachHang.Name = "dataGridView1_DS_KhachHang";
             this.dataGridView1_DS_KhachHang.RowHeadersWidth = 51;
             this.dataGridView1_DS_KhachHang.RowTemplate.Height = 24;
             this.dataGridView1_DS_KhachHang.Size = new System.Drawing.Size(573, 198);
             this.dataGridView1_DS_KhachHang.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.dataGridView1_DS_KhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_DS_KhachHang_CellContentClick);
             // 
             // Column3
             // 
@@ -112,6 +110,28 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Ngày sinh";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column4.HeaderText = "Số ĐT";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Địa chỉ";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // label1
             // 
@@ -139,6 +159,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.btn_Search.TabIndex = 5;
             this.btn_Search.Text = "Tìm kiếm";
             this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // label3
             // 
@@ -149,14 +170,14 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.label3.TabIndex = 6;
             this.label3.Text = "Đăng ký khách hàng mới";
             // 
-            // label4
+            // label4_GioiTInh
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(754, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Họ tên ";
+            this.label4_GioiTInh.AutoSize = true;
+            this.label4_GioiTInh.Location = new System.Drawing.Point(754, 81);
+            this.label4_GioiTInh.Name = "label4_GioiTInh";
+            this.label4_GioiTInh.Size = new System.Drawing.Size(54, 17);
+            this.label4_GioiTInh.TabIndex = 7;
+            this.label4_GioiTInh.Text = "Họ tên ";
             // 
             // label5
             // 
@@ -305,9 +326,10 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             // 
             // button_DangKyKhachHang
             // 
+            this.button_DangKyKhachHang.AutoSize = true;
             this.button_DangKyKhachHang.Location = new System.Drawing.Point(894, 441);
             this.button_DangKyKhachHang.Name = "button_DangKyKhachHang";
-            this.button_DangKyKhachHang.Size = new System.Drawing.Size(75, 23);
+            this.button_DangKyKhachHang.Size = new System.Drawing.Size(75, 27);
             this.button_DangKyKhachHang.TabIndex = 25;
             this.button_DangKyKhachHang.Text = "Đăng ký";
             this.button_DangKyKhachHang.UseVisualStyleBackColor = true;
@@ -371,7 +393,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label4_GioiTInh);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.label2);
@@ -395,7 +417,7 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label4_GioiTInh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -417,8 +439,10 @@ namespace HE_THONG_TIEM_CHUNG_AN_BINH
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBox_ThuocTinh_Search;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
